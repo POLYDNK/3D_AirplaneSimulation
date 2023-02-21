@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17A31F5B-352A-47C6-9B7A-D1B6B3127652}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Midterm_Project</RootNamespace>
+    <AssemblyName>Midterm_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="SceneObjects\Airport.cs" />
+    <Compile Include="SceneObjects\Building.cs" />
+    <Compile Include="Maps\GreenCity.cs" />
+    <Compile Include="SceneObjects\ControlTower.cs" />
+    <Compile Include="SceneObjects\Plants\Bush1.cs" />
+    <Compile Include="SceneObjects\Plants\Bush2.cs" />
+    <Compile Include="SceneObjects\Plants\BushField.cs" />
+    <Compile Include="SceneObjects\Plants\Plant.cs" />
+    <Compile Include="SceneObjects\Plants\Tree1.cs" />
+    <Compile Include="SceneObjects\Plants\Tree2.cs" />
+    <Compile Include="SceneObjects\Runway.cs" />
+    <Compile Include="SceneObjects\Skybox.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="SceneObjects\Airplane.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Primitives\Cube.cs" />
+    <Compile Include="Primitives\CubeTop.cs" />
+    <Compile Include="Primitives\CubeSide.cs" />
+    <Compile Include="SceneObjects\customCamera.cs" />
+    <Compile Include="SceneObjects\GrassField.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\sky-with-clouds-texture2000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\grass-lawn-texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\roadTexture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\BuildingTexture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Plants\plant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Plants\plant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Plants\tree1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Plants\tree2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\facadeTexture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\glass-panel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AmbientWind.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

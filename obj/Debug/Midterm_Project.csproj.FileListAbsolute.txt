@@ -1,0 +1,16 @@
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\bin\Debug\Midterm_Project.exe.config
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\bin\Debug\Midterm_Project.exe
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\bin\Debug\Midterm_Project.pdb
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.csproj.AssemblyReference.cache
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\MainWindow.g.cs
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\App.g.cs
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project_Content.g.cs
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project_MarkupCompile.cache
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project_MarkupCompile.lref
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\MainWindow.baml
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.g.resources
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.Properties.Resources.resources
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.csproj.GenerateResource.cache
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.csproj.CoreCompileInputs.cache
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.exe
+C:\Users\fires\OneDrive\Documents\FALL2021\CS480\AirplaneProject\BrysonSquibb_Final_11-28-2021\obj\Debug\Midterm_Project.pdb

@@ -1,0 +1,41 @@
+﻿<Window x:Class="Midterm_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1080" KeyDown="Window_KeyDown">
+
+    <Grid>
+        <Viewport3D Name="myViewport" Loaded="myViewport_Loaded"></Viewport3D>
+
+        <TextBlock x:Name="CameraMode" HorizontalAlignment="Center" Height="48" Margin="360,24,373,0" TextWrapping="Wrap" Text="Camera Mode: Airplane" VerticalAlignment="Top" Width="339" TextAlignment="Center" Foreground="Red" FontSize="16"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="0,960,0,0" TextWrapping="Wrap" Text="Camera Mode: F" VerticalAlignment="Top" Width="311" Height="24"  FontSize="16"/>
+        <TextBlock x:Name="Time" HorizontalAlignment="Left" Margin="0,1020,0,0" TextWrapping="Wrap" Text="time" VerticalAlignment="Top" Width="175"/>
+        <TextBlock x:Name="AngleX" HorizontalAlignment="Right" Margin="0,940,0,0" TextWrapping="Wrap" Text="Angle X: " VerticalAlignment="Top" Width="135"/>
+        <TextBlock x:Name="AngleY" HorizontalAlignment="Right" Margin="0,956,0,0" TextWrapping="Wrap" Text="Angle Y: " VerticalAlignment="Top" Width="135"/>
+        <TextBlock x:Name="AngleZ" HorizontalAlignment="Right" Margin="0,972,0,0" TextWrapping="Wrap" Text="Angle Z: " VerticalAlignment="Top" Width="135"/>
+        <TextBlock x:Name="X" HorizontalAlignment="Right" Margin="0,988,-3,0" TextWrapping="Wrap" Text="X: " VerticalAlignment="Top" Width="138"/>
+        <TextBlock x:Name="Y" HorizontalAlignment="Right" Margin="0,1004,-3,0" TextWrapping="Wrap" Text="Y: " VerticalAlignment="Top" Width="138"/>
+        <TextBlock x:Name="Z" HorizontalAlignment="Right" Margin="0,1020,-3,0" TextWrapping="Wrap" Text="Z: " VerticalAlignment="Top" Width="138"/>
+        <TextBlock x:Name="ForwardSpeed" HorizontalAlignment="Right" Margin="0,924,0,0" TextWrapping="Wrap" Text="Forward Speed: " VerticalAlignment="Top" Width="135"/>
+        <TextBlock x:Name="VerticalSpeed" HorizontalAlignment="Right" Margin="0,908,0,0" TextWrapping="Wrap" Text="Vertical Speed: " VerticalAlignment="Top" Width="135"/>
+
+        <TextBox x:Name="W" HorizontalAlignment="Left" Height="20" Margin="62,890,0,0" TextWrapping="Wrap" Text="W" VerticalAlignment="Top" Width="20" TextAlignment="Center"/>
+        <TextBox x:Name="A" HorizontalAlignment="Left" Height="20" Margin="42,910,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="20" TextAlignment="Center"/>
+        <TextBox x:Name="S" HorizontalAlignment="Left" Height="20" Margin="62,910,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" Width="20" TextAlignment="Center"/>
+        <TextBox x:Name="D" HorizontalAlignment="Left" Height="20" Margin="82,910,0,0" TextWrapping="Wrap" Text="D" VerticalAlignment="Top" Width="20" TextAlignment="Center"/>
+        <TextBox x:Name="Q" HorizontalAlignment="Left" Height="20" Margin="42,890,0,0" TextWrapping="Wrap" Text="Q" VerticalAlignment="Top" Width="20" TextAlignment="Center"/>
+        <TextBox x:Name="E" HorizontalAlignment="Left" Height="20" Margin="82,890,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" Width="20" TextAlignment="Center"/>
+        <TextBox x:Name="Shift" HorizontalAlignment="Left" Height="20" Margin="6,930,0,0" TextWrapping="Wrap" Text="Shift" VerticalAlignment="Top" Width="48" TextAlignment="Center"/>
+        <TextBox x:Name="Control" HorizontalAlignment="Left" Height="20" Margin="54,930,0,0" TextWrapping="Wrap" Text="Control" VerticalAlignment="Top" Width="48" TextAlignment="Center"/>
+
+        <Button x:Name="ReplayButton"  Content="Play Animation" HorizontalAlignment="Right" Margin="0,846,29,0" VerticalAlignment="Top" Width="106" Click="ReplayButton_Click"/>
+        <TextBox x:Name="input" HorizontalAlignment="Right" Height="23" Margin="0,813,15,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="RecordButton"  Content="Record Animation" HorizontalAlignment="Right" Margin="0,875,29,0" VerticalAlignment="Top" Width="106" Click="RecordButton_Click"/>
+
+        <MediaElement x:Name="windSound" LoadedBehavior="Play" Source="../../\Assets\AmbientWind.wav" Volume="0.2" Margin="937,762,29,263" MediaEnded="windSound_MediaEnded"/>
+    </Grid>
+</Window>
